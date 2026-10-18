@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Admin Panel</div>
+      <ul class="nav-links">
+        <li><span id="welcome"></span></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="dash-container">
+    <div class="panel wide">
+      <h3>City-wide Dashboard</h3>
+      <div class="stats" id="stats"></div>
+      <h4 style="margin-top:15px">Department ke hisaab se complaints</h4>
+      <div id="deptStats"></div>
+    </div>
+
+    <div class="panel wide">
+      <h3>Saari Complaints</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tracking ID</th><th>Department</th><th>Title</th>
+            <th>Status</th><th>Assigned To</th><th>Assign Karo</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

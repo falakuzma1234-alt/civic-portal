@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Panel</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Official Panel</div>
+      <ul class="nav-links">
+        <li><span id="welcome"></span></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="dash-container">
+    <div class="panel wide">
+      <h3>Meri Department ki Complaints</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tracking ID</th><th>Citizen</th><th>Title</th><th>Location</th>
+            <th>Status</th><th>Priority</th><th>Remarks</th><th>Update</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="official.js"></script>
+</body>
+</html>
